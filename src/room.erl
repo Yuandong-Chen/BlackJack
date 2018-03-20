@@ -127,7 +127,7 @@ broadcast([H|T], S = #message{}, reveal) ->
   broadcast(T, S, reveal);
 
 broadcast([H|T], S = #message{}, normal) ->
-  [H1, H2] = S#message.makercard,
+  [H1, _H2] = S#message.makercard,
   H#player.id ! S#message{makercard = [H1, 0]},
   broadcast(T, S, normal);
 
