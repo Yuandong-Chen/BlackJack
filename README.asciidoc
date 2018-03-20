@@ -1,10 +1,8 @@
-= BlackJack in Erlang
+= blackjack interface in Erlang for mix project
 
 To try this example, you need GNU `make` and `git` in your PATH.
 
-To build and run the example, use the following command:
+To build the example, use the following command:
 
 [source,bash]
-$ make run
-
-Then point your browser to http://localhost:8080
+$ make
