@@ -1,4 +1,4 @@
-PROJECT = websocket
+PROJECT = blackjack
 PROJECT_DESCRIPTION = Cowboy Websocket example
 PROJECT_VERSION = 1
 DEPS = cowboy jiffy
