@@ -6,6 +6,7 @@ ERLC_OPTS = -W0
 DIALYZER_OPTS = -Werror_handling -Wunmatched_returns
 
 # Dependencies.
+LOCAL_DEPS = runtime_tools observer wx inets
 
 dep_cowboy = git https://github.com/ninenines/cowboy.git master
 
