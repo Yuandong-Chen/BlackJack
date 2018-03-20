@@ -12,11 +12,11 @@
 start(_Type, _Args) ->
 	Dispatch = cowboy_router:compile([
 		{'_', [
-			{"/", cowboy_static, {priv_file, websocket, "index.html"}},
+			{"/", cowboy_static, {priv_file, blackjack, "index.html"}},
 			{"/websocket", ws_handler, []},
-			{"/static/[...]", cowboy_static, {priv_dir, websocket, "static"}},
-			{"/css/[...]", cowboy_static, {priv_dir, websocket, "css"}},
-			{"/images/[...]", cowboy_static, {priv_dir, websocket, "images"}}
+			{"/static/[...]", cowboy_static, {priv_dir, blackjack, "static"}},
+			{"/css/[...]", cowboy_static, {priv_dir, blackjack, "css"}},
+			{"/images/[...]", cowboy_static, {priv_dir, blackjack, "images"}}
 		]}
 	]),
 	{ok, _} = cowboy:start_clear(http, [{port, 8080}], #{
