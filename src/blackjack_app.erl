@@ -22,7 +22,7 @@ start(_Type, _Args) ->
 	{ok, _} = cowboy:start_clear(http, [{port, 8080}], #{
 		env => #{dispatch => Dispatch}
 	}),
-	websocket_sup:start_link().
+	blackjack_sup:start_link().
 
 stop(_State) ->
 	ok.
