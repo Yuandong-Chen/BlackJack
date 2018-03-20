@@ -93,7 +93,6 @@ endif
 # Core targets.
 
 all:: deps app rel
-	rebar3 compile
 
 # Noop to avoid a Make warning when there's nothing to do.
 rel::
