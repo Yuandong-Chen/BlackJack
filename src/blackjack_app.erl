@@ -10,6 +10,7 @@
 
 %% API.
 start(_Type, _Args) ->
+	application:ensure_all_started(cowboy),
 	Dispatch = cowboy_router:compile([
 		{'_', [
 			{"/", cowboy_static, {priv_file, blackjack, "index.html"}},
